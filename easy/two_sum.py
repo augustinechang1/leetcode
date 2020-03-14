@@ -8,7 +8,7 @@ l = {}
 def two_sum(nums, target):
     for x, y in enumerate(nums):
         if target - y in l:
-            print(l[target - y], x)
+            return l[target - y], x
         l[y] = x
 
-two_sum(nums, target)
+print(two_sum(nums, target))
